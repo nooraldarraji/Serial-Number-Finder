@@ -1,18 +1,14 @@
 #!/bin/bash
 # 
 # Author: Noor Al Darraji
-# 
 # Instagram : @i.n00r
-#
 # 05-21-2018
-#
 # License: MIT
-#
 # Simple script to search for C-series M5 systems log
 # 
-# ** NOTE : I made this script only for practicing purposes, so please don't mind my mistakes and my awful code lines :).
+# ** NOTE : I made this script only for Shell Scripting practicing purposes.
 #
-#
+
 
 USERINPUT=${1}
 YELLOW='\033[43;30m'
@@ -80,21 +76,6 @@ if [ $? -eq 2 ]; then
 
 fi
 
-
-#	FOLDER_OUTPUT=$(ls -d $USERINPUT* | sort | tail -n1 &>/tmp/m5_folder_log_output.txt)
-#	FOLDER_CH=/tmp/m5_folder_log_output.txt
-#	FOLDER_ENTRY=`cat /tmp/m5_folder_log_output.txt`
-
-#	xM5Path () {
-#       
-#	        CONFIG_HOME=/usr/autoprog/cmrc/sequence
-#                cd $CONFIG_HOME &>/dev/null
-#                cd "`ls -trd $USERINPUT* | tail -n 1 `" &>/dev/null
-#        }
-
-
-
-
 xCDF () {
 
 	
@@ -161,8 +142,6 @@ xUser() {
 	
 }
 
-#	if [[ "$SN" == *"FOX"* ]]; then
-#		fi
  
 xMac() {
 	
@@ -177,7 +156,6 @@ xIP() {
 
 xSNfind() {
 
-	#this is the funiest Function i have ever done. LOL
 	snfind $USERINPUT 0 > /tmp/m5_script_snfind_log.txt
 	cat /tmp/m5_script_snfind_log.txt | awk -v "key=F" '$7 == key {print($0)}' > /tmp/after_awk_tr.txt
 	echo -e "+----------------------------------------------------------------------------------------------------------------------------------------------------------------+"

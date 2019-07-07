@@ -10,7 +10,7 @@
 #
 # Simple script to search for C-series M5 systems log
 #
-# ** NOTE : I made this script only for practicing purposes, so please don't mind my mistakes and my awful code lines :).
+# ** NOTE : I made this script only for practicing purposes.
 #
 #
 
@@ -79,20 +79,6 @@ clear
     exit 52
     
   fi
-  
-  
-  #	FOLDER_OUTPUT=$(ls -d $USERINPUT* | sort | tail -n1 &>/tmp/m5_folder_log_output.txt)
-  #	FOLDER_CH=/tmp/m5_folder_log_output.txt
-  #	FOLDER_ENTRY=`cat /tmp/m5_folder_log_output.txt`
-  
-  #	xM5Path () {
-  #
-  #	        CONFIG_HOME=/usr/autoprog/cmrc/sequence
-  #                cd $CONFIG_HOME &>/dev/null
-  #                cd "`ls -trd $USERINPUT* | tail -n 1 `" &>/dev/null
-  #        }
-  
-  
   
   
   xCDF () {

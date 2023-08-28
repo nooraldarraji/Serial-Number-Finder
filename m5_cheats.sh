@@ -1,7 +1,6 @@
 #!/bin/bash
 # 
 # Author: Noor Al Darraji
-# Instagram : @i.n00r
 # 05-21-2018
 # License: MIT
 # Simple script to search for C-series M5 systems log
